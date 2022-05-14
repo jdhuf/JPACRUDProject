@@ -44,7 +44,7 @@ ${DEBUG }  <!-- TEST -->
 					<td>${player.birthdate }</td>
 					<td>${player.position }</td>
 					<td>${player.homeTown }</td>
-					<td>Nationality</td>
+					<td>${player.nationality}</td>
 					<td>${player.height }</td>
 					<td>${player.weight }</td>
 
