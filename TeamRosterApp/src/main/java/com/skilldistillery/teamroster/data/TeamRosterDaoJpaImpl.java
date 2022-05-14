@@ -1,5 +1,7 @@
 package com.skilldistillery.teamroster.data;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
@@ -24,10 +26,18 @@ public class TeamRosterDaoJpaImpl implements TeamRosterDAO{
 	
 
 
+//	@Override
+//	public Player findAll() {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+	
 	@Override
-	public Player findAll() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Player> findAll() {
+		String jpql = "SELECT p FROM Player p";
+		
+		
+		return em.createQuery(jpql, Player.class).getResultList();
 	}
 	
 

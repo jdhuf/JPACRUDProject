@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.skilldistillery.teamroster.data.TeamRosterDAO;
@@ -15,21 +16,28 @@ public class TeamRosterController {
 	private TeamRosterDAO teamRosterDao;
 	
 	
-	@RequestMapping(path = {"/", "home.do"})
-	public String index(Model model) {
-		
-		model.addAttribute("DEBUG", teamRosterDao.findById(1));
-			
-		return "index";
-	}
+//	@RequestMapping(path = {"/", "home.do"})
+//	public String index(Model model) {
+//		
+//		model.addAttribute("DEBUG", teamRosterDao.findById(1));
+//			
+//		return "index";
+//	}
 	
-	@RequestMapping("getFilm.do")
-	public String showFilm(@RequestParam Integer pid, Model model) {
+	@RequestMapping("getPlayer.do")
+	public String showPlayer(@RequestParam Integer pid, Model model) {
 		Player player = teamRosterDao.findById(pid);
 				
 				
 		model.addAttribute("player", player);
 		return "player/show";
+	}
+	
+	@RequestMapping(path = {"/", "index.do"}, method = RequestMethod.GET)
+	public String index(Model model) {
+		
+		model.addAttribute("players", teamRosterDao.findAll());
+		return "index";
 	}
 
 }
