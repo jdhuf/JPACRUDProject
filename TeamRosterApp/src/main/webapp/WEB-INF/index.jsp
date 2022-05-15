@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +18,8 @@ ${DEBUG }  <!-- TEST -->
 	<form action="getPlayer.do" method="GET">
 		Player ID: <input type="text" name="pid" /> <input type="submit"
 			value="Show Player" />
-	</form>
+	</form><br>
+			
 
 	<table>
 		<thead>
@@ -37,7 +40,7 @@ ${DEBUG }  <!-- TEST -->
 
 		<tbody>
 
-			<c:forEach var="player" items="${players}">
+			<c:forEach var="player" items="${playersHi}">
 				<tr>
 					<td>${player.id }</td>
 					<td><a href="getPlayer.do?pid=${player.id}"> ${player.name }</a></td>
@@ -52,7 +55,36 @@ ${DEBUG }  <!-- TEST -->
 			</c:forEach>
 		</tbody>
 	</table>
-
+	
+	
+	<h3>Add a new player to roster:</h3>
+	
+	<form action="createdPlayer.do" method="POST">
+		<label for="name"> <strong>Enter name:</strong></label>		
+		<input type="text" name="createdPlayer.do?playerName=${player.name}" size="25" /> <br> 
+		
+		<label for="birthdate"> <strong>Enter birthdate:</strong></label>		
+		<input type="text" name="birthdate" size="25" /> <br> 
+		
+		<label for="position"> <strong>Enter position:</strong></label>
+		<input type="text" name="position" size="25" /> <br> 
+		
+		<label for="homeTown"> <strong>Enter home town:</strong></label>
+		<input type="text" name="homeTown" size="25" /> <br> 
+		
+		<label for="nationality"> <strong>Enter nationality:</strong></label>
+		<input type="text" name="nationality" size="25" /> <br> 
+		
+		<label for="height"> <strong>Enter height:</strong></label>
+		<input type="text" name="height" size="25" /> <br> 
+		
+		<label for="weight"> <strong>Enter weight:</strong></label>
+		<input type="text" name="weight" size="25" /> <br> 
+		
+		<input type="submit" value="Add New Player" />
+		
+	</form>
+	
 
 </body>
 </html>

@@ -9,12 +9,12 @@ import javax.persistence.Id;
 @Entity
 public class Player {
 	
+
+
+
 	public Player() {
 		super();
-		
 	}
-	
-
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
