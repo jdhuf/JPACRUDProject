@@ -25,32 +25,39 @@
  	<h3>Update a player you previously added:</h3>
 	<form action="updatePlayer.do" method="POST">
 		
-		<label for="id">Player Id:</label> <input type="text" name="id" size="5"
-			value="${player.id}" readonly /> <br> 
+		<label for="id"> <strong>Player Id:</strong></label> <br>
+		 <input type="text" name="id" size="25"
+			value="${player.id}" readonly /> <br> <br>
 			
-			<label for="name">Name:</label>
-		<input type="text" name="updateName" size="20" value="${player.name}" /> <br>
+			<label for="name"><strong>Name:</strong></label> <br>
+		<input type="text" name="updateName" size="25" value="${player.name}" /> <br> <br>
 		
-		<label for="birthdate">Birthdate:</label> <input type="text"
-			name="birthdate" size="20" value="${player.birthdate}" /> <br>
+		<label for="birthdate"><strong>Birthdate:</strong></label> <br>
+		<input type="text"
+			name="birthdate" size="25" value="${player.birthdate}" /> <br> <br>
 			
-		<label for="position">Position:</label> <input type="text" name="position"
-			size="20" value="${player.position}" /> <br> 
+		<label for="position"><strong>Position:</strong></label> <br>
+		<input type="text" name="position"
+			size="25" value="${player.position}" /> <br> <br>
 			
 			<label
-			for="homeTown">Home Town:</label> <input type="text"
-			name="homeTown" size="20" value="${player.homeTown}" /> <br>
+			for="homeTown"><strong>Home Town</strong></label> <br>
+			<input type="text"
+			name="homeTown" size="25" value="${player.homeTown}" /> <br> <br>
 			
-		<label for="nationality">Nationality:</label> <input type="text"
-			name="nationality" size="20" value="${player.nationality}" /> <br>
+		<label for="nationality"><strong>Nationality</strong></label> <br>
+		<input type="text"
+			name="nationality" size="25" value="${player.nationality}" /> <br> <br>
 			
 			 <label
-			for="height">Height:</label> <input type="text" name="height"
-			size="5" value="${player.height}" /> <br> 
+			for="height"><strong>Height:</strong></label> <br>
+			<input type="text" name="height"
+			size="25" value="${player.height}" /> <br> <br>
 			
 			<label
-			for="weight">Weight:</label> <input type="text"
-			name="weight" size="5" value="${player.weight}" /> <br>
+			for="weight"><strong>Weight:</strong></label> <br>
+			<input type="text"
+			name="weight" size="25" value="${player.weight}" /> <br> <br>
 			
 		<br> <input type="submit" value="Update This Player" />
 	</form>

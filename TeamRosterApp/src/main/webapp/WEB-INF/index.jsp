@@ -15,7 +15,7 @@
 
 	<h1>Welcome to Team Roster Site</h1>
 
-
+	<h3>Enter a player ID to find a player or delete a player from the roster.</h3>
 	<form action="getPlayer.do" method="GET">
 		Player ID: <input type="text" name="pid" /> <input type="submit"
 			value="Show Player" />
@@ -34,14 +34,14 @@
 		<thead>
 			<tr>
 
-				<th>ID</th>
-				<th>Name</th>
-				<th>Birthdate</th>
-				<th>Position</th>
-				<th>Home Town</th>
+				<th>ID         </th>
+				<th>Name       </th>
+				<th>Birthdate  </th>
+				<th>Position   </th>
+				<th>Home Town  </th>
 				<th>Nationality</th>
-				<th>Height</th>
-				<th>Weight</th>
+				<th>Height     </th>
+				<th>Weight     </th>
 
 			</tr>
 
@@ -69,25 +69,26 @@
 	<h3>Add a new player to roster:</h3>
 
 	<form action="addPlayer.do" method="POST">
-		<label for="playerName"> <strong>Enter name:</strong></label> 
-		<input type="text" name="createName" size="25" /> <br> 
-		<label for="birthdate"> <strong>Enter birthdate:</strong></label> 
-				<input type="text" name="birthdate" size="25" /> <br>
-
-		<label for="position"> <strong>Enter position:</strong></label> 
-		<input type="text" name="position" size="25" /> <br> 
+		<label for="playerName"> <strong>Enter name:</strong></label> <br><br>
+		<input type="text" name="createName" size="25" /> <br> <br>
 		
-		<label for="homeTown"> <strong>Enter home town:</strong></label> 
-		<input type="text" name="homeTown" size="25" /> <br> 
+		<label for="birthdate"> <strong>Enter birthdate:</strong></label> <br>
+				<input type="text" name="birthdate" size="25" /> <br> <br>
+
+		<label for="position"> <strong>Enter position:</strong></label> <br>
+		<input type="text" name="position" size="25" /> <br> <br>
+		
+		<label for="homeTown"> <strong>Enter home town:</strong></label> <br>
+		<input type="text" name="homeTown" size="25" /> <br> <br>
 			
-		<label for="nationality"> <strong>Enter nationality:</strong></label> 
-		<input type="text" name="nationality" size="25" /> <br> 
+		<label for="nationality"> <strong>Enter nationality:</strong></label> <br>
+		<input type="text" name="nationality" size="25" /> <br> <br>
 			
-		<label for="height"> <strong>Enter height:</strong></label> 
-		<input type="text" name="height" size="25" /> <br> 
+		<label for="height"> <strong>Enter height:</strong></label> <br>
+		<input type="text" name="height" size="25" /> <br> <br>
 			
-		<label for="weight"> <strong>Enter weight:</strong>
-		</label> <input type="text" name="weight" size="25" /> <br> 
+		<label for="weight"> <strong>Enter weight:</strong></label> <br>
+		<input type="text" name="weight" size="25" /> <br> <br>
 		
 
 		<input type="submit" value="Add Player" />
