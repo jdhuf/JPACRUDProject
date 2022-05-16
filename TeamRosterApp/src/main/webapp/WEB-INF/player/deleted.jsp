@@ -6,12 +6,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Player Deleted</title>
 </head>
 <body>
 <a href="index.do">Home</a><br>
 
-<h1>Film Successfully Deleted</h1>
+<h1>Player Successfully Deleted</h1>
 
 </body>
 </html>

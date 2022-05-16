@@ -6,10 +6,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Player</title>
+<title>Player Updated</title>
 </head>
 <body>
 <a href="index.do">Home</a>
+	
 	<div>
  		<h5>Name: ${player.name}</h5>
 		<h5>Birthdate: ${player.birthdate}</h5>

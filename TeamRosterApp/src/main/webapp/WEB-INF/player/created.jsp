@@ -6,10 +6,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Player</title>
+<title>Player Created</title>
 </head>
 <body>
 <a href="index.do">Home</a>
+
+<h1>CREATED</h1>
+	
 	<div>
 		<h5>Name: ${player.name}</h5>
 		<h5>Birthdate: ${player.birthdate}</h5>
@@ -20,6 +23,7 @@
 		<h5>Weight: ${player.weight}</h5>
 		
 	</div>
+	
 
 </body>
 </html>

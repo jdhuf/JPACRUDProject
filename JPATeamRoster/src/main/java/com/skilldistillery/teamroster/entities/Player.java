@@ -9,11 +9,20 @@ import javax.persistence.Id;
 @Entity
 public class Player {
 	
+	public Player () {}
 
 
-
-	public Player() {
+	public Player(int id, String name, String birthdate, String position, String homeTown, String nationality,
+			int height, int weight) {
 		super();
+		this.id = id;
+		this.name = name;
+		this.birthdate = birthdate;
+		this.position = position;
+		this.homeTown = homeTown;
+		this.nationality = nationality;
+		this.height = height;
+		this.weight = weight;
 	}
 
 	@Id

@@ -16,6 +16,5 @@ public interface TeamRosterDAO {
 	
 	public boolean destroy(int id);
 	
-//	Player findAll();
 
 }
