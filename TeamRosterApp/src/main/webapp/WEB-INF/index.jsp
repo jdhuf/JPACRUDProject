@@ -11,22 +11,9 @@
 </head>
 <body>
 
-	${DEBUG }
-	<!-- TEST -->
+	${DEBUG }<!-- TEST -->
 
 	<h1>Welcome to Team Roster Site</h1>
-
-
-
-	<!-- 
-<h3>Search for a Player by Player ID</h3>
-	<form action="FindPlayerByID.do" method="GET">
-		Player ID: <input type="text" name="playerID" size="5" /> <input
-			type="submit" value="Search by ID" />
-	</form>
-	<br> -->
-
-
 
 
 	<form action="getPlayer.do" method="GET">

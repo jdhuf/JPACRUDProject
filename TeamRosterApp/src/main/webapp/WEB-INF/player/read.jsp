@@ -6,13 +6,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Player Found</title>
+<title>Player</title>
 </head>
-<body>
-
-	<h1>READ</h1>
-	
-
+<body>	
+	<a href="index.do">Home</a> 
 	
 	<div>
  		<h5>Name: ${player.name}</h5>
@@ -32,33 +29,32 @@
 			value="${player.id}" readonly /> <br> 
 			
 			<label for="name">Name:</label>
-		<input type="text" name="updateName" size="30" value="${player.name}" /> <br>
+		<input type="text" name="updateName" size="20" value="${player.name}" /> <br>
 		
 		<label for="birthdate">Birthdate:</label> <input type="text"
-			name="birthdate" size="5" value="${player.birthdate}" /> <br>
+			name="birthdate" size="20" value="${player.birthdate}" /> <br>
 			
 		<label for="position">Position:</label> <input type="text" name="position"
 			size="20" value="${player.position}" /> <br> 
 			
 			<label
 			for="homeTown">Home Town:</label> <input type="text"
-			name="homeTown" size="7" value="${player.homeTown}" /> <br>
+			name="homeTown" size="20" value="${player.homeTown}" /> <br>
 			
 		<label for="nationality">Nationality:</label> <input type="text"
-			name="nationality" size="7" value="${player.nationality}" /> <br>
+			name="nationality" size="20" value="${player.nationality}" /> <br>
 			
 			 <label
 			for="height">Height:</label> <input type="text" name="height"
-			size="7" value="${player.height}" /> <br> 
+			size="5" value="${player.height}" /> <br> 
 			
 			<label
 			for="weight">Weight:</label> <input type="text"
-			name="weight" size="7" value="${player.weight}" /> <br>
+			name="weight" size="5" value="${player.weight}" /> <br>
 			
 		<br> <input type="submit" value="Update This Player" />
 	</form>
 	
-	<a href="index.do">Home</a> 
 
 </body>
 </html>

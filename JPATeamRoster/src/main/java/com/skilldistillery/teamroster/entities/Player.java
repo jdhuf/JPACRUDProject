@@ -8,9 +8,9 @@ import javax.persistence.Id;
 
 @Entity
 public class Player {
-	
-	public Player () {}
 
+	public Player() {
+	}
 
 	public Player(int id, String name, String birthdate, String position, String homeTown, String nationality,
 			int height, int weight) {
@@ -26,26 +26,23 @@ public class Player {
 	}
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	
+
 	private String name;
-	
+
 	private String birthdate;
-	
+
 	private String position;
-	
-	@Column(name="home_town")
+
+	@Column(name = "home_town")
 	private String homeTown;
-	
+
 	private String nationality;
-	
+
 	private int height;
-	
+
 	private int weight;
-
-
-	
 
 	public String getBirthdate() {
 		return birthdate;
@@ -117,9 +114,5 @@ public class Player {
 				+ ", homeTown=" + homeTown + ", nationality=" + nationality + ", height=" + height + ", weight="
 				+ weight + "]";
 	}
-
-
-	
-	
 
 }

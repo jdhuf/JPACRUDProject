@@ -25,7 +25,6 @@ public class TeamRosterDaoJpaImpl implements TeamRosterDAO {
 		return em.find(Player.class, playerId);
 	}
 
-
 	@Override
 	public List<Player> findAll() {
 		String jpql = "SELECT p FROM Player p";
@@ -37,13 +36,13 @@ public class TeamRosterDaoJpaImpl implements TeamRosterDAO {
 	public Player create(Player player) {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("JPATeamRoster");
 		EntityManager em = emf.createEntityManager();
-		// start the transaction
+
 		em.getTransaction().begin();
-		// write the actor to the database
+
 		em.persist(player);
-		// update the "local" Player object
+
 		em.flush();
-		// commit the changes (actually perform the operation)
+
 		em.getTransaction().commit();
 
 		em.close();
